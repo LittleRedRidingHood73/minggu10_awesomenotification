@@ -9,6 +9,8 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    dynamic id = 1;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home Page'),
@@ -99,7 +101,7 @@ class HomeScreen extends StatelessWidget {
           OutlinedButton(
             onPressed: () async {
               await NotificationService.createNotification(
-                id: 5,
+                id: 6,
                 title: 'Scheduled Notification',
                 body: 'This is the body of the notification',
                 scheduled: true,
